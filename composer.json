@@ -1,0 +1,34 @@
+{
+  "license": "MIT",
+  "name": "hopkins/predictionio-laravel-wrapper",
+  "description": "Took some queues from Endroid and bratao and hopefully got the package to v0.8.*",
+  "keywords": [
+    "laravel",
+    "predictionio",
+    "machine learning",
+    "wrapper",
+    "api"
+  ],
+  "authors": [
+    {
+      "name": "Michael Hopkins",
+      "email": "mhopkins321@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "illuminate/support": "5.*",
+    "predictionio/predictionio": "0.8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hopkins\\PredictionWrapper\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  },
+  "minimum-stability": "dev"
+}
