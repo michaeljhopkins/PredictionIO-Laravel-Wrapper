@@ -22,26 +22,26 @@ web shop to discovering relevant experts in a social collaboration network.
 * Install library and dependencies:
 
 ```bash
-$ composer require "bratao/prediction-io:1.*@dev"
+$ composer require "hopkins/predictionio-laravel-wrapper:0.1.*@dev"
 ```
 
 * Add a **provider** in `app/config/app.php`:
 
 ```php
-    'Bratao\PredictionIO\PredictionServiceProvider'
+    'Hopkins\PredictionWrapper\PredictionWrapperServiceProvider',
 ```
 
 * Add an **alias** in `app/config/app.php`:
 
 ```php
-    'Prediction'      => 'Bratao\PredictionIO\Facade',
+    'EngineClient'      => 'Hopkins\PredictionWrapper\Facades\EngineFacade',
+    'EventClient'       => 'Hopkins\PredictionWrapper\Facades\EventFacade',
 ```
 
 * Define your [PredictionIO API endpoint](http://docs.prediction.io/current/tutorials/quickstart-php.html#add-your-app-to-predictionio) in `app/config/services.php`:
 
 ```php
 	'predictionio' => array(
-		'api' => 'http://localhost:8000/',
 		'key' => '0250b3f85ce33284f77c77f36b41010ef2c4fc5c',
 	),
 ```
